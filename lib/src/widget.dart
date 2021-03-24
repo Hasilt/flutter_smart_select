@@ -1763,7 +1763,7 @@ class S2SingleState<T> extends S2State<T> {
     super.didUpdateWidget(oldWidget);
 
     // reset the initial value
-    // if (oldWidget.singleSelected != widget.singleSelected) resolveSelected();
+    if (oldWidget.singleSelected != widget.singleSelected) resolveSelected();
   }
 
   @override
